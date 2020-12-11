@@ -4,7 +4,7 @@ import uuid from "uuid/v4";
 class NewTodoForm extends Component {
   constructor(props) {
     super(props);
-    this.state = { task: "" };
+    this.state = { task: this.props.state };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
